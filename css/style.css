@@ -16,7 +16,7 @@
   --fumaca-claro: #b9ab99; /* texto secundário sobre carvão */
   --oliva: #6e7f55;        /* selos de confiança — usado com moderação */
 
-  --font-display: "Fraunces", serif;
+  --font-display: "Playfair Display", serif;
   --font-body: "Work Sans", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
@@ -398,6 +398,32 @@ a {
   background: var(--branco);
   padding: 72px 0 0;
 }
+.depo-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.depo-nav { display: flex; gap: 10px; flex-shrink: 0; }
+.depo-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(36,29,23,0.18);
+  background: var(--branco);
+  color: var(--carvao);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+.depo-arrow:hover { border-color: var(--madeira-deep); color: var(--madeira-deep); }
+.depo-arrow:active { transform: scale(0.92); }
+
 .depo-track {
   display: flex;
   gap: 18px;
@@ -406,6 +432,12 @@ a {
   padding: 4px 24px 12px;
   margin: 0 -24px 16px;
   -webkit-overflow-scrolling: touch;
+  cursor: grab;
+}
+.depo-track.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  user-select: none;
 }
 .depo-card {
   flex: 0 0 min(340px, 85vw);
@@ -416,7 +448,9 @@ a {
   padding: 26px 22px;
   margin: 0;
   border-radius: 6px;
+  pointer-events: auto;
 }
+.depo-track.is-dragging .depo-card { pointer-events: none; }
 .depo-card p {
   font-family: var(--font-display);
   font-style: italic;
