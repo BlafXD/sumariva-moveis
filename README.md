@@ -33,10 +33,17 @@ assets/
 ## Pendências antes de entregar ao cliente
 
 - [ ] Pedir fotos da fachada/loja e da equipe (pastas `fotos-loja` e `fotos-equipe` ainda vazias)
-- [ ] Confirmar/validar o handle do Instagram (@sumarivamoveisaltopadrao)
-- [ ] Confirmar número de WhatsApp preferido para o botão de orçamento
+- [x] ~~Confirmar/validar o handle do Instagram~~ — `@sumarivamoveisaltopadrao` está fora do ar (confirmado 2026-10-12, página "não disponível"). Link removido do site. Candidato encontrado: `@mariasumarivaprojetista` ("Maria Sumariva - Projetista") — **confirmar com a Maria se é o perfil oficial antes de colocar no site.**
+- [x] Número de WhatsApp do botão de orçamento: `(41) 99914-7267` (o mesmo que já estava no Google Maps)
 - [ ] Trocar domínio/hospedagem final (GitHub Pages serve para demo; produção pode ir para domínio próprio)
 - [ ] Comprimir/otimizar as fotos em `assets/fotos-produtos` antes do deploy final (estão no tamanho original do celular)
+
+## Contatos (uso interno — não vai no site público)
+
+- `(41) 99914-7267` — Sumariva (número principal, usado no site)
+- `(41) 9 9983-6792` — Maria (dona)
+- `(41) 9 9720-3656` — Kevin
+- Horário real (Google Maps): seg–sáb 8h–19h, domingo fechado — já atualizado no site e no schema.org
 
 ---
 Projeto para fins comerciais — ver contexto em `GERAL.MD` na raiz do hub `FreeStyle`.
