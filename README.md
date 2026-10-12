@@ -12,8 +12,9 @@ Landing page comercial para a **Sumariva Móveis**, marcenaria planejada de alto
 
 ## Direção de design
 
-- **Paleta**: tons de madeira escura (`#1c1510`, `#2a1f17`) + serragem/osso claro (`#ede2d1`) + cobre/latão (`#c07a3e`) como acento — remete a madeira de lei e ferragem de marcenaria.
-- **Elemento de assinatura**: um motivo de **encaixe tipo "box joint"/"finger joint"** (o encaixe clássico de marcenaria), usado como divisor entre todas as seções e como selo decorativo — gerado via JS (`js/script.js`) para manter o SVG limpo no HTML.
+- **Paleta**: derivada das fotos reais do cliente — neutro claro/osso (`#f3eee6`, `#fbf8f4`), madeira âmbar (`#b9875a`) e carvão (`#241d17`) como contraste, igual ao que aparece nos móveis e no logo deles. Só a seção "Projetos" usa fundo escuro cheio (como parede de galeria para as fotos).
+- **Elemento de assinatura**: um **arco fino** (echo do círculo que já existe na marca deles, visto em `assets/marca/fundo-marca-referencia.png`) atrás das fotos, + divisores em onda suave entre as seções de maior contraste — fluido, sem quebras bruscas.
+- **Fotos reais do cliente** usadas no hero, "Sobre" e nos 4 cards de "Projetos" (ver `assets/fotos-produtos/`).
 - **Depoimentos reais** extraídos das avaliações públicas do Google (5.0 ★, 17 avaliações).
 
 ## Estrutura
@@ -23,17 +24,19 @@ index.html
 css/style.css
 js/script.js
 assets/
-  fotos-loja/       → fotos do espaço/fachada (quando o cliente enviar)
-  fotos-produtos/   → fotos de móveis/projetos entregues
-  fotos-equipe/     → fotos da equipe/atendimento
+  fotos-loja/       → fotos do espaço/fachada (ainda vazio — pedir ao cliente)
+  fotos-produtos/   → fotos reais de móveis/projetos entregues (em uso no site)
+  fotos-equipe/     → fotos da equipe/atendimento (ainda vazio — pedir ao cliente)
+  marca/            → logo (SVG) e referência de marca do cliente, enviados por ele
 ```
 
 ## Pendências antes de entregar ao cliente
 
-- [ ] Substituir os cards da seção "Projetos" por fotos reais (pasta `assets/fotos-produtos`)
+- [ ] Pedir fotos da fachada/loja e da equipe (pastas `fotos-loja` e `fotos-equipe` ainda vazias)
 - [ ] Confirmar/validar o handle do Instagram (@sumarivamoveisaltopadrao)
 - [ ] Confirmar número de WhatsApp preferido para o botão de orçamento
 - [ ] Trocar domínio/hospedagem final (GitHub Pages serve para demo; produção pode ir para domínio próprio)
+- [ ] Comprimir/otimizar as fotos em `assets/fotos-produtos` antes do deploy final (estão no tamanho original do celular)
 
 ---
 Projeto para fins comerciais — ver contexto em `GERAL.MD` na raiz do hub `FreeStyle`.
